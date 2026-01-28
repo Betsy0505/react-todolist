@@ -1,9 +1,20 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPenToSquare } from '@fortawesome/free-solid-svg-icons'
+import { faTrash } from '@fortawesome/free-solid-svg-icons'
 
-const Todo = () => {
+export const Todo = () => {
   return (
-    <div>Todo</div>
+    <div className='Todo'>
+      <p>Go to school</p>
+      <div className='Todo-icons'>
+        <div className='icon-btn edit-btn'>
+          <FontAwesomeIcon icon={faPenToSquare} />
+        </div>
+        <div className='icon-btn delete-btn'>
+          <FontAwesomeIcon icon={faTrash} /> 
+        </div>
+      </div>
+    </div>
   )
 }
-
-export default Todo
