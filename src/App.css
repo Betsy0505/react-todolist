@@ -242,12 +242,26 @@ body {
   margin: 0;
 }
 
-.completed {
-  opacity: 0.6;
+/* Completed task styling with enhanced visibility */
+.Todo.completed {
+  background: rgba(34, 197, 94, 0.2);
+  border-color: rgba(34, 197, 94, 0.4);
+  opacity: 0.85;
+  transform: scale(0.98);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Todo.completed:hover {
+  background: rgba(34, 197, 94, 0.25);
+  border-color: rgba(34, 197, 94, 0.5);
+  transform: scale(0.98) translateY(-2px);
 }
 
 .completed p {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.75);
   text-decoration: line-through;
+  text-decoration-color: rgba(34, 197, 94, 0.8);
+  text-decoration-thickness: 2.5px;
   font-style: italic;
+  opacity: 0.9;
 }
