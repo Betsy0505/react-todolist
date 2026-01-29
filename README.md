@@ -1,61 +1,83 @@
-# 📝 To Do List - React JS
+# 📝 To Do List - React JS + Node.js API
 
-Aplicación **To Do List** desarrollada con **React JS**, que permite crear, editar, completar y eliminar tareas de manera dinámica utilizando hooks y manejo de estado.
+Una aplicación completa **To Do List** con **frontend en React** y **backend en Node.js**, que permite gestionar tareas de manera persistente con una base de datos SQLite.
 
 ## 🚀 Características
 
+### Frontend (React)
 - ➕ Agregar nuevas tareas
 - ✏️ Editar tareas existentes
 - ✅ Marcar tareas como completadas
 - 🗑️ Eliminar tareas
 - 🔄 Renderizado dinámico con `useState`
-- 🆔 Identificadores únicos con `uuid`
+- 🌐 Conexión a API RESTful
+- 🎨 Interfaz responsiva y moderna
+
+### Backend (Node.js + Express)
+- 🔐 API REST completa
+- 💾 Persistencia de datos con SQLite
+- 🛡️ CORS habilitado
+- 📊 Operaciones CRUD (Create, Read, Update, Delete)
+- ⚡ Respuestas JSON estandarizadas
 
 ## 🛠️ Tecnologías utilizadas
 
-- **React JS**
+### Frontend
+- **React JS 18**
 - **JavaScript (ES6+)**
-- **CSS**
-- **UUID**
-- **React Hooks (`useState`)**
+- **CSS3** (Estilos personalizados)
+- **React Hooks** (`useState`, `useEffect`)
+- **Axios** (Para llamadas HTTP)
 
-## 📂 Estructura del proyecto
+### Backend
+- **Node.js** + **Express.js**
+- **SQLite3** (Base de datos ligera)
+- **CORS** (Middleware para seguridad)
+- **Nodemon** (Recarga automática en desarrollo)
 
+## 📊 Endpoints disponibles
 
-## 📌 Funcionamiento principal
+| Método | Endpoint | Descripción |
+|--------|----------|-------------|
+| `GET` | `/api/todos` | Obtener todas las tareas |
+| `POST` | `/api/todos` | Crear nueva tarea |
+| `PUT` | `/api/todos/:id` | Actualizar tarea existente |
+| `DELETE` | `/api/todos/:id` | Eliminar tarea |
 
-- `TodoWrapper` gestiona el estado global de las tareas.
-- Cada tarea contiene:
-  - `id`: identificador único
-  - `task`: texto de la tarea
-  - `completed`: estado de completado
-  - `isEditing`: controla el modo edición
-- Se utiliza renderizado condicional para mostrar el formulario de edición o la tarea normal.
+## ⚡ Instalación y ejecución
 
-## ⚙️ Instalación y ejecución
+#### 1. Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/react-todolist.git
+cd react-todolist
+```
+#### 2. Instalar dependencias del frontend
+```bash
+npm install
+```
+#### 3. Instalar dependencias del backend
+```bash
+cd backend
+npm install
+cd ..
+```
+#### 4. Ejecutar en modo desarrollo (dos terminales)
+Terminal 1 - Backend:
+```bash
+cd backend
+npm run dev
+```
+📡 Servidor en: http://localhost:5000
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
-2. Entra al proyecto:
-   ```bash
-   cd tu-repositorio
-3. Instala las dependencias:
-   ```bash
-   npm install
-4. Ejecuta la aplicación:
-   ```bash
-   npm start
-5. Abre en el navegador:
-   http://localhost:3000
+Terminal 2 - Frontend:
+```bash
+npm start
+```
+🌐 Aplicación en: http://localhost:3000
 
 📸 Vista previa
-<img width="1096" height="604" alt="image" src="https://github.com/user-attachments/assets/5ceb57f0-bf33-4e51-87bb-5dd8012232c6" />
-
-## 🌐 Demo
-👉 [(https://react-todolist-wine.vercel.app/)]
+https://github.com/user-attachments/assets/36cccdfb-9291-4bdd-aa80-7ce846004ad6
 
 ✨ Autor
+Betsy Velázquez - Desarrolladora Full Stack
 
-Desarrollado por Betsy Velazquez 💻
-¡Proyecto creado con fines de aprendizaje!
