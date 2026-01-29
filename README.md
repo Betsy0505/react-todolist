@@ -76,7 +76,7 @@ npm start
 🌐 Aplicación en: http://localhost:3000
 
 📸 Vista previa
-https://github.com/user-attachments/assets/36cccdfb-9291-4bdd-aa80-7ce846004ad6
+<img width="807" height="552" alt="image" src="https://github.com/user-attachments/assets/36cccdfb-9291-4bdd-aa80-7ce846004ad6" />
 
 ✨ Autor
 Betsy Velázquez - Desarrolladora Full Stack
