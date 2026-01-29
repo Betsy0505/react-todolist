@@ -1,26 +1,35 @@
-import React, {useState} from 'react'
+import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFloppyDisk } from '@fortawesome/free-solid-svg-icons';
 
-export const EditTodoForm = ({editTodo, task}) => {
-  const [value, setValue] = useState(task.task)
+export const EditTodoForm = ({ editTodo, task }) => {
+  const [value, setValue] = useState(task.task);
 
-   const handleSubmit = (e) => {
+  useEffect(() => {
+    setValue(task.task);
+  }, [task]);
+
+  const handleSubmit = (e) => {
     e.preventDefault();
-    
-    // Validar que el input no esté vacío
-    if (value.trim() === "") {
-      return;
+    if (value.trim()) {
+      editTodo(value, task.id);
+      setValue("");
     }
-    
-    editTodo(value, task.id);
-    setValue("");
-   }
-  return (
-    <form className='TodoForm' onSubmit={handleSubmit}>
-        <input type="text" className='todo-input' value={value} placeholder='Update task'  onChange={(e)=> setValue(e.target.value)}
-        />
-        <button type='submit' className='todo-btn'>Update Task</button>
-    </form>
-  )
-}
+  };
 
-export default EditTodoForm
+  return (
+    <form className="TodoForm" onSubmit={handleSubmit}>
+      <input
+        type="text"
+        className="todo-input"
+        value={value}
+        placeholder="Editar tarea"
+        onChange={(e) => setValue(e.target.value)}
+      />
+      <button type="submit" className="todo-btn">
+        <FontAwesomeIcon icon={faFloppyDisk} className="btn-icon" />
+        Update task
+      </button>
+    </form>
+  );
+};
