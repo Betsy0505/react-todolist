@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Betsy\\Desktop\\STUDY\\react-todolist\\backend\\todoList\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F9E34120-B9F4-44E6-8747-819EB3058645}|todoList.csproj|c:\\users\\betsy\\desktop\\study\\react-todolist\\backend\\todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F9E34120-B9F4-44E6-8747-819EB3058645}|todoList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{21CDAE8C-4911-4940-A666-9CF4DBB28F47}|todoList.csproj|c:\\users\\betsy\\desktop\\study\\react-todolist\\backend\\todolist\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21CDAE8C-4911-4940-A666-9CF4DBB28F47}|todoList.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F9E34120-B9F4-44E6-8747-819EB3058645}|todoList.csproj|c:\\users\\betsy\\desktop\\study\\react-todolist\\backend\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{F9E34120-B9F4-44E6-8747-819EB3058645}|todoList.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{21CDAE8C-4911-4940-A666-9CF4DBB28F47}|todoList.csproj|c:\\users\\betsy\\desktop\\study\\react-todolist\\backend\\todolist\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{21CDAE8C-4911-4940-A666-9CF4DBB28F47}|todoList.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,8 +43,7 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-01T04:34:17.997Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-01T04:34:17.997Z"
             }
           ]
         }
